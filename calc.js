@@ -7,11 +7,32 @@ sevenNumberButton.addEventListener("click", function() {
     document.querySelector(".sum-box").innerHTML += document.querySelector(".sevenbtn").innerHTML
 })
 
-var eightNumberButton = document.querySelector(".eightbtn")
 
-eightNumberButton.addEventListener("click", function() {
-    document.querySelector(".sum-box").innerHTML += document.querySelector(".eightbtn").innerHTML
-})
+
+
+
+
+
+var sumBox = document.querySelector(".sum-box").innerHTML
+
+var eightNumberButton = document.querySelector(".eightbtn")
+if (sumBox !== "0") {
+    eightNumberButton.addEventListener("click", function() {
+        document.querySelector(".sum-box").innerHTML += document.querySelector(".eightbtn").innerHTML})
+} else {
+    eightNumberButton.addEventListener("click", function() {
+        document.querySelector(".sum-box").innerHTML = document.querySelector(".eightbtn").innerHTML})
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
