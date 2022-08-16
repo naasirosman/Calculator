@@ -1,5 +1,7 @@
 
 
+
+
 var sevenNumberButton = document.querySelector(".sevenbtn")
 //console.log('btn', numberButton.innerHTML)
 
@@ -13,16 +15,21 @@ sevenNumberButton.addEventListener("click", function() {
 
 
 
-var sumBox = parseInt(document.querySelector(".sum-box").innerHTML) 
-console.log(sumBox)
+//var sumBox = parseInt(document.querySelector(".sum-box").innerHTML) 
+//console.log(sumBox)
 var eightNumberButton = document.querySelector(".eightbtn")
-//if (sumBox == 0) {
-//    eightNumberButton.addEventListener("click", function() {
-//        document.querySelector(".sum-box").innerHTML = document.querySelector(".eightbtn").innerHTML})
-//} else {
+
     eightNumberButton.addEventListener("click", function() {
-        document.querySelector(".sum-box").innerHTML += document.querySelector(".eightbtn").innerHTML})
-//}
+        if (parseInt(document.querySelector(".sum-box").innerHTML) === 0) {
+        document.querySelector(".sum-box").innerHTML = document.querySelector(".eightbtn").innerHTML
+        console.log(parseInt(document.querySelector(".sum-box").innerHTML))
+        console.log(parseInt(document.querySelector(".sum-box").innerHTML))
+        }
+        else {
+            document.querySelector(".sum-box").innerHTML += document.querySelector(".eightbtn").innerHTML
+ }})
+
+
 
 
 

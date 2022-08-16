@@ -36,6 +36,7 @@
     align-items: center;
     font-size: 2rem;
 }
+
 .zerobtn {
     width: 44%;
     border-radius: 25px;
@@ -44,7 +45,16 @@
     background-color: #f69908;
     color: white;
 }
+.orangebtn:hover {
+    background-color: #edb65e;
+}
 .numbtn {
     background-color: #313131;
     color: white;
+}
+.numbtn:hover {
+    background-color: #434343;
+}
+.acbtn:hover, .plusminusbtn:hover, .percentbtn:hover {
+    background-color: #808080;
 }
