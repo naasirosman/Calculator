@@ -13,16 +13,16 @@ sevenNumberButton.addEventListener("click", function() {
 
 
 
-var sumBox = document.querySelector(".sum-box").innerHTML
-
+var sumBox = parseInt(document.querySelector(".sum-box").innerHTML) 
+console.log(sumBox)
 var eightNumberButton = document.querySelector(".eightbtn")
-if (sumBox !== "0") {
+//if (sumBox == 0) {
+//    eightNumberButton.addEventListener("click", function() {
+//        document.querySelector(".sum-box").innerHTML = document.querySelector(".eightbtn").innerHTML})
+//} else {
     eightNumberButton.addEventListener("click", function() {
         document.querySelector(".sum-box").innerHTML += document.querySelector(".eightbtn").innerHTML})
-} else {
-    eightNumberButton.addEventListener("click", function() {
-        document.querySelector(".sum-box").innerHTML = document.querySelector(".eightbtn").innerHTML})
-}
+//}
 
 
 
@@ -114,6 +114,98 @@ acNumberButton.addEventListener("click", function() {
 })
 
 
+
+var plusMinusNumberButton = document.querySelector(".plusminusbtn")
+
+plusMinusNumberButton.addEventListener("click", function() {
+    document.querySelector(".sum-box").innerHTML = `-${document.querySelector(".sum-box").innerHTML}`
+})
+
+
+
+
+
+
+
+
+
+var percentNumberButton = document.querySelector(".percentbtn")
+
+percentNumberButton.addEventListener("click", function() {
+    var prePercentOperation = document.querySelector(".sum-box").innerHTML;
+    document.querySelector(".sum-box").innerHTML = document.querySelector(".zerobtn").innerHTML
+    
+    var equalNumberButton = document.querySelector(".equalbtn")
+    
+    equalNumberButton.addEventListener("click", function() {
+       document.querySelector(".sum-box").innerHTML = parseInt(prePercentOperation) * 100 / parseInt(document.querySelector(".sum-box").innerHTML)
+    })
+
+})
+
+
+
+var divideNumberButton = document.querySelector(".dividebtn")
+
+divideNumberButton.addEventListener("click", function() {
+    var preDivideOperation = document.querySelector(".sum-box").innerHTML;
+    document.querySelector(".sum-box").innerHTML = document.querySelector(".zerobtn").innerHTML
+    
+    var equalNumberButton = document.querySelector(".equalbtn")
+    
+    equalNumberButton.addEventListener("click", function() {
+       document.querySelector(".sum-box").innerHTML = parseInt(preDivideOperation) / parseInt(document.querySelector(".sum-box").innerHTML)
+    })
+
+})
+
+
+
+var timesNumberButton = document.querySelector(".timesbtn")
+
+timesNumberButton.addEventListener("click", function() {
+    var preTimesOperation = document.querySelector(".sum-box").innerHTML;
+    document.querySelector(".sum-box").innerHTML = document.querySelector(".zerobtn").innerHTML
+    
+    var equalNumberButton = document.querySelector(".equalbtn")
+    
+    equalNumberButton.addEventListener("click", function() {
+       document.querySelector(".sum-box").innerHTML = parseInt(preTimesOperation) * parseInt(document.querySelector(".sum-box").innerHTML)
+    })
+
+})
+
+
+
+var plusNumberButton = document.querySelector(".plusbtn")
+
+plusNumberButton.addEventListener("click", function() {
+    var prePlusOperation = document.querySelector(".sum-box").innerHTML;
+    document.querySelector(".sum-box").innerHTML = document.querySelector(".zerobtn").innerHTML
+    
+    var equalNumberButton = document.querySelector(".equalbtn")
+    
+    equalNumberButton.addEventListener("click", function() {
+       document.querySelector(".sum-box").innerHTML = parseInt(prePlusOperation) + parseInt(document.querySelector(".sum-box").innerHTML)
+    })
+
+})
+
+
+
+var minusNumberButton = document.querySelector(".minusbtn")
+
+minusNumberButton.addEventListener("click", function() {
+    var preMinusOperation = document.querySelector(".sum-box").innerHTML;
+    document.querySelector(".sum-box").innerHTML = document.querySelector(".zerobtn").innerHTML
+    
+    var equalNumberButton = document.querySelector(".equalbtn")
+    
+    equalNumberButton.addEventListener("click", function() {
+       document.querySelector(".sum-box").innerHTML = parseInt(preMinusOperation) * 100 / parseInt(document.querySelector(".sum-box").innerHTML)
+    })
+
+})
 
 
 
