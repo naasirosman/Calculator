@@ -36,7 +36,7 @@ This may be good as the calculator is reading it as 5 multiplied by negative thr
 
 The Repository (HTML & CSS):
 
-- buttons use the <button>
+- buttons use the "<button>" tag
 - the calc is subdivided into rows (divs)
     - first row - the screen
     - second row - the a/c, +/-, %, ÷ and so on...
