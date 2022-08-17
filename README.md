@@ -2,18 +2,18 @@
 
 How the calculator works (JavaScript):
 
-- Calc is split into to the screen (sumBox) number buttons and operator buttons
+- calc is split into to the screen (sumBox) number buttons and operator buttons
 
-- Clicking of a number button adds numbers to the screen via the inner HTML of whatever is clicked
+- clicking of a number button adds numbers to the screen via the inner HTML of whatever is clicked
 
-- Clicking of a function button stores whatevers on the screen at the time into a preOperation variable and allows user to input more numbers, and then when the user presses the equals operator, the calc carries out the operation using whatever is on the screen and whatever was on the screen (preOperation variable)
+- clicking of a function button stores whatevers on the screen at the time into a preOperation variable and allows user to input more numbers, and then when the user presses the equals operator, the calc carries out the operation using whatever is on the screen and whatever was on the screen (preOperation variable)
 
-- A/C operator refreshes the page as to remove memory (reset what is stored in the preOperation variable)
+- a/C operator refreshes the page as to remove memory (reset what is stored in the preOperation variable)
 
-- Error messages include "NaN" when the answer is not a number and "infinity" when something is divided by 0
+- error messages include "NaN" when the answer is not a number and "infinity" when something is divided by 0
 (Both of these are built-in into JavaScript)
 
-- When first using the calculator, "0" is manually treated as a placeholder so when a number button is clicked, the number replaces 0
+- when first using the calculator, "0" is manually treated as a placeholder so when a number button is clicked, the number replaces 0
 
 
 
@@ -39,6 +39,7 @@ The Repository (HTML & CSS):
 - buttons use the < button > tag
 - the calc is subdivided into rows (divs)
     - first row - the screen
-    - second row - the a/c, +/-, %, ÷ and so on...
+    - second row - a/c, +/-, %, ÷ 
+    - and so on...
 - each row is given the flexbox style and contents (buttons are spread out)
 - each button is styled to fit the iOS style calculator
