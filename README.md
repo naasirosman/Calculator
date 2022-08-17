@@ -8,7 +8,7 @@ How the calculator works (JavaScript):
 
 - clicking of a function button stores whatevers on the screen at the time into a preOperation variable and allows user to input more numbers, and then when the user presses the equals operator, the calc carries out the operation using whatever is on the screen and whatever was on the screen (preOperation variable)
 
-- a/C operator refreshes the page as to remove memory (reset what is stored in the preOperation variable)
+- a/c operator refreshes the page as to remove memory (reset what is stored in the preOperation variable)
 
 - error messages include "NaN" when the answer is not a number and "infinity" when something is divided by 0
 (Both of these are built-in into JavaScript)
